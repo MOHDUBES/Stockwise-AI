@@ -1,0 +1,10 @@
+{
+  "name": "stockwise-ai",
+  "version": "1.0.0",
+  "description": "Smart Inventory & Sales Decision Assistant",
+  "scripts": {
+    "backend": "cd backend && python -m uvicorn main:app --reload --port 8000",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "npx concurrently \"npm run backend\" \"npm run frontend\""
+  }
+}

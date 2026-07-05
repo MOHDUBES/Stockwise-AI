@@ -1,0 +1,11 @@
+name,category,unit,cost_price,selling_price,current_stock,reorder_point,reorder_qty,lead_time_days,shelf_life_days,supplier
+Britannia Bread (400g),Snacks & Confectionery,pack,32,42,8,15,40,1,7,Britannia
+Horlicks (500g),Beverages,jar,175,220,5,8,20,3,,GlaxoSmithKline
+Atta (10kg),Grains & Pulses,bag,380,440,12,20,60,2,180,Aashirvaad
+Kissan Jam (500g),Snacks & Confectionery,jar,95,130,7,10,25,3,365,HUL
+LUX Soap 4-pack,Personal Care,pack,88,115,20,12,36,3,,HUL
+Lays Chips (100g × 10),Snacks & Confectionery,carton,210,280,4,10,30,2,120,PepsiCo
+Mother Dairy Curd (400g),Dairy & Eggs,cup,35,45,10,20,60,1,3,Mother Dairy
+Patanjali Ghee (1L),Oils & Ghee,tin,520,650,6,8,20,4,365,Patanjali
+Red Label Tea (250g),Beverages,pack,95,125,15,12,36,2,730,Brooke Bond
+Dettol Soap 4-pack,Personal Care,pack,110,148,14,10,30,3,,Reckitt
