@@ -41,7 +41,7 @@ export default function LoginPage() {
     setError("");
     setIsGoogleLoading(true);
     try {
-      const res = await request("/api/v1/auth/google", {
+      const res: any = await request("/api/v1/auth/google", {
         method: "POST",
       });
       // The backend returns user info directly on success for demo purposes

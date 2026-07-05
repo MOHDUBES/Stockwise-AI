@@ -251,11 +251,11 @@ export default function BenchmarkPage() {
                   wrapperStyle={{ fontSize: 12, color: "var(--text-secondary)" }}
                 />
                 <Bar dataKey="pandas_time_ms" name="🐼 pandas (CPU)" fill="#f59e0b" radius={[4, 4, 0, 0]}>
-                  <LabelList dataKey="pandas_time_ms" position="top" formatter={(v: number) => v ? `${v.toFixed(0)}ms` : ''}
+                  <LabelList dataKey="pandas_time_ms" position="top" formatter={(v: any) => v ? `${v.toFixed(0)}ms` : ''}
                     style={{ fill: "var(--text-muted)", fontSize: 10 }} />
                 </Bar>
                 <Bar dataKey="cudf_time_ms" name="⚡ cuDF (GPU)" fill="#00e5a0" radius={[4, 4, 0, 0]}>
-                  <LabelList dataKey="cudf_time_ms" position="top" formatter={(v: number | null) => v ? `${v.toFixed(0)}ms` : ''}
+                  <LabelList dataKey="cudf_time_ms" position="top" formatter={(v: any) => v ? `${v.toFixed(0)}ms` : ''}
                     style={{ fill: "var(--text-muted)", fontSize: 10 }} />
                 </Bar>
               </BarChart>

@@ -37,7 +37,7 @@ class ResetPasswordRequest(BaseModel):
     reset_token: str
     new_password: str
 
-DB_FILE = "users_db.json"
+DB_FILE = "/tmp/users_db.json"
 
 def load_users():
     if os.path.exists(DB_FILE):

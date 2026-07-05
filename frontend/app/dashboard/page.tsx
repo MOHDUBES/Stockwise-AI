@@ -60,7 +60,7 @@ export default function DashboardPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
         <div className="depth-card max-w-lg w-full p-10 flex flex-col items-center text-center">
-          <Mascot emotion="thinking" size="lg" />
+          <Mascot emotion="thinking" />
           <h2 className="text-2xl font-bold mt-6 mb-2">Your Inventory is Empty</h2>
           <p className="text-text-secondary mb-8 text-sm">
             Welcome to StockWise AI! It looks like you haven't uploaded any inventory data yet. Please upload your CSV file to get started.
