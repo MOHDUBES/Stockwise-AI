@@ -35,29 +35,29 @@
 
 ```mermaid
 graph TD
-    subgraph Frontend [Next.js 16 (React + TypeScript)]
-        UI[Dashboard & Data Tables]
-        Charts[Recharts Visualization]
-        AuthUI[JWT Session & Auth UI]
+    subgraph Frontend ["Next.js 16 (React + TypeScript)"]
+        UI["Dashboard & Data Tables"]
+        Charts["Recharts Visualization"]
+        AuthUI["JWT Session & Auth UI"]
     end
 
-    subgraph Backend [FastAPI (Python)]
-        API[RESTful Endpoints]
-        Analytics[Pandas / cuDF Data Engine]
-        ML[Holt-Winters & Risk Scorer]
-        AuthAPI[Auth & Session Manager]
+    subgraph Backend ["FastAPI (Python)"]
+        API["RESTful Endpoints"]
+        Analytics["Pandas / cuDF Data Engine"]
+        ML["Holt-Winters & Risk Scorer"]
+        AuthAPI["Auth & Session Manager"]
     end
 
-    subgraph External [Cloud Services]
-        Gemini[Google Gemini 2.5 Flash API]
-        GCS[Google Cloud Storage]
-        Vertex[Vertex AI for GPU]
+    subgraph External ["Cloud Services"]
+        Gemini["Google Gemini 2.5 Flash API"]
+        GCS["Google Cloud Storage"]
+        Vertex["Vertex AI for GPU"]
     end
 
-    Frontend <-->|REST API| Backend
-    Backend <-->|Prompt| Gemini
-    Backend -->|CSV Backups| GCS
-    Backend <-->|GPU Ops| Vertex
+    Frontend <-->|"REST API"| Backend
+    Backend <-->|"Prompt"| Gemini
+    Backend -->|"CSV Backups"| GCS
+    Backend <-->|"GPU Ops"| Vertex
 ```
 
 ---
