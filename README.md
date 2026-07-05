@@ -1,5 +1,7 @@
 # 🏪 StockWise AI — Smart Inventory & Sales Decision Assistant
 
+**🔴 Live Demo:** [https://stockwise-frontend-896221121418.us-central1.run.app](https://stockwise-frontend-896221121418.us-central1.run.app)
+
 > *"What should I reorder today, how much, and at what price?"*
 > — Answered in seconds, not hours.
 
