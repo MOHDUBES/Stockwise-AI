@@ -33,31 +33,23 @@
 
 ## 🏗️ Architecture
 
+The application is strictly structured into modular layers to separate frontend rendering, backend API logic, data processing, and external AI integrations. It leverages a modern tech stack to ensure high performance, security, and scalability.
+
 ```mermaid
 graph TD
-    subgraph Frontend ["Next.js 16 (React + TypeScript)"]
-        UI["Dashboard & Data Tables"]
-        Charts["Recharts Visualization"]
-        AuthUI["JWT Session & Auth UI"]
-    end
+    User((Retailer))
 
-    subgraph Backend ["FastAPI (Python)"]
-        API["RESTful Endpoints"]
-        Analytics["Pandas / cuDF Data Engine"]
-        ML["Holt-Winters & Risk Scorer"]
-        AuthAPI["Auth & Session Manager"]
-    end
-
-    subgraph External ["Cloud Services"]
-        Gemini["Google Gemini 2.5 Flash API"]
-        GCS["Google Cloud Storage"]
-        Vertex["Vertex AI for GPU"]
-    end
-
-    Frontend <-->|"REST API"| Backend
-    Backend <-->|"Prompt"| Gemini
-    Backend -->|"CSV Backups"| GCS
-    Backend <-->|"GPU Ops"| Vertex
+    User -->|"Interacts"| Frontend["Next.js 16 Frontend UI"]
+    
+    Frontend -->|"API Requests"| Backend["FastAPI Backend Engine"]
+    
+    Backend -->|"Data Processing"| Analytics["Pandas / cuDF Analytics"]
+    Backend -->|"Forecasting"| ML["Holt-Winters & Risk Scorer"]
+    Backend -->|"Generates AI Insights"| Gemini["Gemini 2.5 Flash API"]
+    
+    Analytics -->|"Syncs State"| DB[("App Database / Memory")]
+    Backend -->|"Saves Backups"| GCS[("Google Cloud Storage")]
+    Analytics -->|"GPU Acceleration"| Vertex["Vertex AI"]
 ```
 
 ---
