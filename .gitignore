@@ -51,6 +51,8 @@ coverage/
 # Google Cloud
 *.json
 !package.json
+!package-lock.json
+!components.json
 !tsconfig.json
 !eslint*.json
 service-account*.json
